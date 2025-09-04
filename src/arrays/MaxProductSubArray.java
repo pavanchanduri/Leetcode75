@@ -1,3 +1,4 @@
+package arrays;
 public class MaxProductSubArray {
 
     public static void main(String[] args) {

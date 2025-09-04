@@ -1,3 +1,4 @@
+package arrays;
 public class MaxSumSubArray {
 
     public static void main(String[] args) {
