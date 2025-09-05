@@ -25,7 +25,12 @@ public class ContainerWithMostWater {
             int minHeight = Math.min(height[left], height[right]);
             maxArea = Math.max(maxArea, width * minHeight);
 
-            // Move the pointer pointing to the shorter line
+            /**
+             * We move the pointer pointing to the shorter line because the area is limited by the shorter wall.
+            To potentially find a larger area, we need to increase the minimum height.
+            By moving the shorter line inward, we might find a taller wall, which could increase the area.
+            Moving the taller line would not help, since the limiting factor (the shorter wall) remains the same or gets worse. 
+             */
             if (height[left] < height[right]) {
                 left++;
             } else {
